@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import './Login.css';
 
 import { Link, useNavigate } from 'react-router-dom';
@@ -20,7 +20,7 @@ function Login() {
 
   useEffect(() => {
     if (usuario.token !== "") {
-        navigate('/Home')
+        navigate('/home')
     }
 }, [usuario])
 
